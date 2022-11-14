@@ -1,69 +1,125 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-	<style type="text/css">
-		body {
-			background: #303030;
-			color: #fff;
-			height:  100vh;
-			width: 100%;
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+        body {
+            background: #222ebd;
+            color: #fff;
+            height: 100vh;
+            width: 100%;
+            font-family: 'Work Sans', sans-serif;
+        }
 
-		}
-		img {
-			width: 300px;
-			border-radius: 99px;
-		}
-		.container {
-			display:  flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: row;
-		}
-		figcaption, h1 {
-			text-align: center;
-		}
-		ul {
-			font-size: 1rem;
-		}
+        img {
+            width: 300px !important;
+            height: 200px !important;
+            border-radius: 99px;
+        }
 
-	</style>
-	<title>Maciej Wojciechowski</title>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        figure {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items:center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        figcaption, h1 {
+            text-align: center;
+        }
+        h1, hr {
+            display: flex;
+            justify-content: center;
+        }
+        figcaption {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .bujubuju:hover {
+            transform: translate(100px, 200px);
+            transition: all 0.5s ease-in-out;
+        }
+        .chujubuju:hover {
+            transform: translate(-100px, -200px);
+            transition: all 0.5s ease-in-out;
+        }
+        .chujubuju {
+            transition: all 0.5s ease-in-out;
+        }
+        .bujubuju {
+            transition: all 0.5s ease-in-out;
+        }
+        ul {
+            font-size: 1rem;
+        }
+        a:-webkit-any-link {
+            font-family: 'Rubik Bubbles', cursive;
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            color: greenyellow;
+            transition: all 0.3s ease-out;
+        }
+    </style>
+    <title>Maciej Wojciechowski</title>
 </head>
 <body>
-	<h1>Maciej Wojciechowski</h1>
-	<hr>
-	<div class="container">
-	
-	<figure>
-    	<img src="https://cdn.discordapp.com/attachments/937621937243451422/1040003289191829504/unknown.png"
-         alt="Złomek">
-		<figcaption>Złomek</figcaption>
-		<ul>
-		<li>Złomek</li>
-		
-	</ul>
-	</figure>
-	<figure>
-    	<img src="https://cdn.discordapp.com/attachments/937621937243451422/1040003569702670346/unknown.png"
-         alt="Franczesko"
-		 style="width:366px">
-		<figcaption>Franczesko</figcaption>
-		<ul>
-		<li>Franczesko</li>
-		
-	</ul>
-	</figure>
-	<figure>
-    	<img src="https://cdn.discordapp.com/attachments/937621937243451422/1040003344606957658/unknown.png"
-         alt="Zyg zag Ma kłin"
-		 style="width:360px">
-		<figcaption>Zyg zag Ma kłin</figcaption>
-		<ul>
-		<li>Zyg zag Ma kłin</li>
-		
-	</ul>
-	</figure>
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: row"></div><hr/><h1>Maciej Wojciechowski</h1> <hr/></div>
 
-</div>
+    <div class="container">
+
+        <figure style="align-self: flex-start; flex-direction: row;">
+            <ul>
+                <li>Złomek</li>
+
+            </ul>
+            <img class="bujubuju" src="https://cdn.discordapp.com/attachments/937621937243451422/1040003289191829504/unknown.png"
+                 alt="Złomek">
+            <figcaption><a href="https://disney.fandom.com/pl/wiki/Z%C5%82omek?so=search">Złom</a></figcaption>
+
+        </figure>
+
+        <figure style="align-self: flex-end">
+            <ul>
+                <li>Franczesko</li>
+
+            </ul>
+            <img  class="chujubuju" src="https://cdn.discordapp.com/attachments/937621937243451422/1040003569702670346/unknown.png"
+                 alt="Franczesko"
+                 style="width:366px">
+            <figcaption><a href="https://disney.fandom.com/pl/wiki/Francesco_Paltegumi">Francesco Paltegumi</a></figcaption>
+
+        </figure>
+        <figure style="align-self: flex-start; flex-direction: row;">
+            <ul>
+                <li>Zyg zag Ma kłin</li>
+
+            </ul>
+            <img  class="bujubuju" src="https://cdn.discordapp.com/attachments/937621937243451422/1040003344606957658/unknown.png"
+                 alt="Zyg zag Ma kłin"
+                 style="width:360px">
+            <figcaption><a href="https://disney.fandom.com/pl/wiki/Zygzak_McQueen">Makłini</a></figcaption>
+
+        </figure>
+        <figure style="align-self: flex-end">
+            <ul>
+                <li>Pewnie znowu odlał biopaliwo Makłiniemu</li>
+
+            </ul>
+            <img  class="chujubuju" src="./ogur.jpg"
+                 alt="Zyg zag Ma kłin"
+                 style="width:360px">
+            <figcaption><a href="https://disney.fandom.com/pl/wiki/Og%C3%B3rek">OGUR</a></figcaption>
+
+        </figure>
+    </div>
 </body>
 </html>
